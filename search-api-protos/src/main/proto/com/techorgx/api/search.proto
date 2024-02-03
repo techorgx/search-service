@@ -1,10 +1,10 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_outer_classname = "ExampleDataApiProto";
-option java_package = "com.techorgx.example.api.v1";
+option java_outer_classname = "SearchDataApiProto";
+option java_package = "com.techorgx.search.api.v1";
 
-service ExampleApi {
+service SearchApi {
   rpc GetPerson (PersonRequest) returns (PersonResponse);
 }
 

@@ -9,15 +9,15 @@
     </parent>
 
     <groupId>com.techorgx.api</groupId>
-    <artifactId>example-service</artifactId>
+    <artifactId>search-service</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
-    <name>example-service</name>
-    <description>description</description>
+    <name>search-service</name>
+    <description>Search Ads</description>
 
 
     <modules>
-        <module>example-api-protos</module>
+        <module>search-api-protos</module>
         <module>grpc</module>
     </modules>
 
