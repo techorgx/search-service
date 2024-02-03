@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>com.techorgx.api</groupId>
-        <artifactId>example-service</artifactId>
+        <artifactId>search-service</artifactId>
         <version>1.0</version>
     </parent>
 
