@@ -40,7 +40,7 @@
                             <goal>repackage</goal>
                         </goals>
                         <configuration>
-                            <finalName>example-service</finalName>
+                            <finalName>search-service</finalName>
                             <outputDirectory>${project.basedir}/../target</outputDirectory>
                             <classifier>exec</classifier>
                             <mainClass>com.techorgx.api.ApplicationKt</mainClass>
