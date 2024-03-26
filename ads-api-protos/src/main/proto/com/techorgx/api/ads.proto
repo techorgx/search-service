@@ -1,0 +1,78 @@
+syntax = "proto3";
+
+package com.project.ads.api.v1;
+
+option java_multiple_files = true;
+option java_outer_classname = "AdsDataApiProto";
+option java_package = "com.techorgx.ads.api.v1";
+
+service AdsApi {
+  rpc CreateAd(CreateAdRequest) returns (CreateAdResponse);
+  rpc GetAd(GetAdRequest) returns (GetAdResponse);
+  rpc UpdateAdStatus(UpdateAdStatusRequest) returns (UpdateAdStatusResponse);
+  rpc GetAdsByUser(GetAdsByUserRequest) returns (GetAdsByUserResponse);
+  rpc DeleteAd(DeleteAdRequest) returns (DeleteAdResponse);
+}
+
+message DeleteAdRequest {
+  string id = 1;
+  string username = 2;
+}
+
+message DeleteAdResponse {
+}
+
+message GetAdsByUserRequest {
+  string username = 1;
+}
+
+message GetAdsByUserResponse {
+  repeated Ad ads = 1;
+}
+
+message Ad {
+  string id = 1;
+  string username = 2;
+  string title = 3;
+  string description = 4;
+  string price = 5;
+  string status = 6;
+}
+
+message CreateAdRequest {
+  string title = 1;
+  string description = 2;
+  double price = 3;
+  string username = 4;
+  string status = 5;
+}
+
+message CreateAdResponse {
+  string id = 1;
+}
+
+message GetAdRequest {
+  string id = 1;
+  string username = 2;
+}
+
+message GetAdResponse {
+  string id = 1;
+  string title = 2;
+  string description = 3;
+  double price = 4;
+  string username = 5;
+  string status = 6;
+}
+
+message UpdateAdStatusRequest {
+  string id = 1;
+  string status = 2;
+  string username = 3;
+}
+
+message UpdateAdStatusResponse {
+  string id = 1;
+  string updatedStatus = 2;
+  string username = 3;
+}
