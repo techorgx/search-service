@@ -18,6 +18,7 @@
 
     <modules>
         <module>search-api-protos</module>
+        <module>ads-api-protos</module>
         <module>grpc</module>
     </modules>
 
