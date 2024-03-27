@@ -1,7 +1,6 @@
 package com.techorgx.api.client
 
 import com.techorgx.api.common.DownstreamService
-import io.grpc.StatusRuntimeException
 
 abstract class BaseClient<in Request, Response>(
     private val downstreamService: DownstreamService
