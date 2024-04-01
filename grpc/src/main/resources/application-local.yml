@@ -1,0 +1,9 @@
+server.port: 8081
+
+grpc:
+  port: 7676
+  channels:
+      name: ads
+      host: localhost
+      port: 6565
+      readTimeout: 10000
