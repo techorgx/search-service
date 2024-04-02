@@ -5,16 +5,23 @@ option java_outer_classname = "SearchDataApiProto";
 option java_package = "com.techorgx.search.api.v1";
 
 service SearchApi {
-  rpc searchAd (SearchRequest) returns (SearchResponse);
+  rpc searchAdsByLocation (SearchAdsByLocationRequest) returns (SearchAdsByLocationResponse);
 }
 
-message Search {
+message Ad {
+  string id = 1;
+  string username = 2;
+  string title = 3;
+  string description = 4;
+  string price = 5;
+  string status = 6;
+  string location = 7;
 }
 
-message SearchRequest {
-  int32 person_id = 1;
+message SearchAdsByLocationRequest {
+  string location = 1;
 }
 
-message SearchResponse {
-  Search search = 1;
+message SearchAdsByLocationResponse {
+  repeated Ad ads = 1;
 }

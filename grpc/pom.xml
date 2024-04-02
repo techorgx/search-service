@@ -20,6 +20,11 @@
             <artifactId>search-api-protos</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.techorgx.api</groupId>
+            <artifactId>ads-api-protos</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
